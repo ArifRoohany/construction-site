@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.larg-text{
+    font-size: 65px;
+}
+.link-text{
+    font-size: 18px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes zoomOut {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.animate-zoomOut {
+  animation: zoomOut 0.3s ease-out;
+}
+
+
+
+
+@keyframes fadedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeDown {
+  animation: fadedown 0.8s ease-out forwards;
+}
+
