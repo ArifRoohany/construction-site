@@ -6,6 +6,9 @@
 .link-text{
     font-size: 18px;
 }
+.logo-size{
+  height: 50px;
+}
 
 @keyframes fadeIn {
   from { opacity: 0; }

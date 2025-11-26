@@ -8,21 +8,21 @@ export default function Hero() {
 
         {/* LEFT COLUMN */}
         <div>
-          <h1 className="larg-text md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-snug md:leading-tight">
             Crafting <br /> Architectural <br /> Wonders
           </h1>
 
-          <p className="mt-4 text-gray-300 text-lg md:text-xl">
+          <p className="mt-4 text-gray-300 text-base sm:text-lg md:text-xl">
             Your Ideas & Dreams Are Transformed By Us Into Long-Lasting, Engineered Buildings
           </p>
 
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-4">
-            <button className="bg-[#fea222] text-black link-text px-6 py-3 rounded-md font-semibold hover:bg-[#e4911d] transition">
+            <button className="bg-[#fea222] text-black text-sm sm:text-base px-5 py-2 sm:px-6 sm:py-3 rounded-md font-semibold hover:bg-[#e4911d] transition">
               Contact Us
             </button>
 
-            <button className="border border-[#fea222] link-text text-white px-6 py-3 rounded-md font-semibold hover:bg-[#fea222] hover:text-black transition">
+            <button className="border border-[#fea222] text-white text-sm sm:text-base px-5 py-2 sm:px-6 sm:py-3 rounded-md font-semibold hover:bg-[#fea222] hover:text-black transition">
               Free Consultation
             </button>
           </div>
@@ -30,18 +30,18 @@ export default function Hero() {
           {/* Bullet */}
           <div className="mt-8 flex items-start gap-3">
             <span className="w-3 h-3 rounded-full bg-[#fea222] mt-1"></span>
-            <p className="text-gray-200 text-lg">
+            <p className="text-gray-200 text-sm sm:text-base md:text-lg">
               All Our Projects Are Created By Experts.
             </p>
           </div>
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end mt-6 md:mt-0">
           <img
             src={heroImg}
             alt="Construction Hero"
-            className="w-full max-h-full"
+            className="w-full max-h-full object-contain"
           />
         </div>
 

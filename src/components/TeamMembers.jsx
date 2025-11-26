@@ -63,7 +63,7 @@ export default function TeamMembers() {
 
               {/* RIGHT TEXT */}
               <div>
-                <h3 classname="text-xl font-bold text-gray-900">
+                <h3 className="text-xl font-bold text-gray-900">
                   {member.name}
                 </h3>
                 <p className="text-sm text-gray-600">{member.role}</p>

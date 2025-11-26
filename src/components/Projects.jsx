@@ -58,13 +58,13 @@ export default function Projects() {
             </p>
           </div>
 
-          {/* RIGHT COLUMN - BUTTON */}
+          {/* RIGHT BUTTON */}
           <button className="mt-6 md:mt-0 border border-[#fea222] text-[#fea222] px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-[#fea222] hover:text-white">
             See All
           </button>
         </div>
 
-        {/* =================== CARDS GRID =================== */}
+        {/* =================== RESPONSIVE CARDS =================== */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
           {cards.map((item, index) => (
@@ -72,17 +72,19 @@ export default function Projects() {
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition"
             >
-              <div className="grid grid-cols-2">
+              {/* 🔥 Important FIX: make layout vertical on small screens, grid on md+ */}
+              <div className="flex flex-col md:grid md:grid-cols-2">
 
-                {/* IMAGE */}
+                {/* IMAGE ALWAYS ON TOP IN SMALL SCREEN */}
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="h-full w-full object-cover"
+                  className="w-full h-52 md:h-full object-cover"
                 />
 
                 {/* TEXT */}
                 <div className="p-4 flex flex-col justify-between">
+
                   <div>
                     <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                     <p className="text-gray-600 text-sm">{item.text}</p>

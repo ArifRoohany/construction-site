@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import PageHeader from "../components/PageHeader";
-import pageHeaderBg from "../assets/pageheader.jpeg"; 
+import pageHeaderBg from "../assets/pageheader.jpg"; 
 import Projects from '../components/Projects';
 
 
